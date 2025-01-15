@@ -1,0 +1,357 @@
+---
+layout: default
+title: Portfolio | Ivo Barbosa
+---
+<input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+<label class="close-menu-label" for="close-menu" title="close menu"></label>
+<header class="page">
+    <div class="menu">
+        <h1>
+            <a href="#"><img src="/assets/img/logo_header.svg" loading="lazy" alt="Logo Function"></a>
+        </h1>
+        <div>
+            <ul onclick="getElementById('close-menu').checked = false;">
+                <li><a href="#services" title="SERVICES">services</a></li>
+                <li><a href="#technologies" title="TECHNOLOGIES">technologies</a></li>
+                <li><a href="#staff" title="STAFF">staff</a></li>
+                <li><a href="#philosophy" class="phylo" title="PHILOSOPHY">philosophy</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="page">
+
+    <section class="block-initial">
+        <!-- <a href="#block-initial" name="block-initial" class="checkpoint"></a> -->
+        <div class="banner">
+            <h1 class="title-block-initial">WE WORK LIKE A <span class="orange-function">FUNCTION</span></h1>
+            <div class="brand-logo">
+                <img class="company" src="/assets/img/company.svg" loading="lazy" alt="Icon Company">
+                <img class="arrow-left" src="/assets/img/seta-esquerda.svg" loading="lazy" alt="Arrow left">
+                <img class="logo-function" src="/assets/img/logo-banner.svg" loading="lazy" alt="Logo Function banner">
+                <img class="arrow-right" src="/assets/img/seta-direita.svg" loading="lazy" alt="Arrow right">
+                <img class="product" src="/assets/img/product.svg" loading="lazy" alt="Icon Product">
+            </div>
+            <div id="function-button">
+                <p class="text-function">function<span id="writing-function"></span>(params):</p>
+                <a href="#"><button class="button-block-initial">START YOUR PROJECT</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <!-- <a href="#services" name="services" class="checkpoint"></a> -->
+        <div class="title-services">
+            <hr>
+            <p>SERVICES</p>
+        </div>
+        <picture>
+            <source srcset="img-services.svg" media="(min-width: 769px)">
+            <source srcset="img-services-mobile.svg" media="(max-width: 768px)">
+            <img src="/assets/img/img-services.svg" alt="Image default Services">
+        </picture>
+    </section>
+
+    <section class="technologies" id="technologies">
+        <!-- <a href="#technologies" name="technologies" class="checkpoint"></a> -->
+        <div class="title-tech">
+            <hr>
+            <p>TECHNOLOGIES</p>
+        </div>
+        <div class="itens-tech">
+            <form>
+                <div class="line">
+                    <label for="g-css3" class="tech">
+                        <img class="tech-img" src="/assets/img/css3.svg" loading="lazy" alt="CSS3 Logo" data-tooltip="CSS3">
+                    </label>
+                    <label for="g-cypress" class="tech">
+                        <img class="tech-img" src="/assets/img/cypress.svg" loading="lazy" alt="Cypress Logo" data-tooltip="Cypress">    
+                    </label>
+                    <label for="g-nginx" class="tech">
+                        <img class="tech-img" src="/assets/img/nginx.svg" loading="lazy" alt="Nginx Logo" data-tooltip="Nginx">
+                    </label>
+                    <label for="g-dynamodb" class="tech">
+                        <img class="tech-img" src="/assets/img/dynamo_db.svg" loading="lazy" alt="Dynamo DB Logo" data-tooltip="Dynamo DB">
+                    </label>
+                </div>
+                
+                <div class="line">
+                    <div class="sub-tech">
+                        <label for="g-python" class="tech">
+                            <img class="tech-img" src="/assets/img/python.svg" loading="lazy" alt="Phyton Logo" data-tooltip="Phyton">
+                        </label>
+                        <input type="radio" name="technology" id="g-python">
+                        <div class="python-itens itens">
+                            <img class="subtech-img" src="/assets/img/python_django.svg" loading="lazy" alt="Logo Django" data-tooltip="Django">
+                            <img class="subtech-img" src="/assets/img/python_fast_api.svg" loading="lazy" alt="Logo Fast API" data-tooltip="Fat API">
+                            <img class="subtech-img" src="/assets/img/python_flask.svg" loading="lazy" alt="Logo Flask" data-tooltip="Flask">
+                            <img class="subtech-img" src="/assets/img/python_klein.svg" loading="lazy" alt="Logo Klein" data-tooltip="Klein">
+                            <img class="subtech-img" src="/assets/img/python_twisted.svg" loading="lazy" alt="Logo Twisted" data-tooltip="Twisted">
+                            <input type="reset" value="">
+                        </div>
+                    </div>
+
+                    <label for="g-html5" class="tech">
+                        <img class="tech-img" src="/assets/img/html5.svg" loading="lazy" alt="HTML5 Logo" data-tooltip="HTML5">
+                    </label>
+                    <label for="g-docker" class="tech">
+                        <img class="tech-img" src="/assets/img/docker.svg" loading="lazy" alt="Docker Logo" data-tooltip="Docker">
+                    </label>
+                    <label for="g-mongodb" class="tech">
+                        <img class="tech-img" src="/assets/img/mongodb.svg" loading="lazy" alt="Mongo DB Logo" data-tooltip="Mongo DB">
+                    </label>
+                    <label for="g-redisdb" class="tech">
+                        <img class="tech-img" src="/assets/img/redis_db.svg" loading="lazy" alt="Redis DB Logo" data-tooltip="Redis DB">                        
+                    </label>
+                </div>
+
+                <div class="line">        
+                    <div class="sub-tech">
+                        <label for="g-ruby" class="tech">
+                            <img class="tech-img" src="/assets/img/ruby.svg" loading="lazy" alt="Ruby Logo" data-tooltip="Ruby">
+                        </label>
+                        <input type="radio" name="technology" id="g-ruby">
+                        <div class="ruby-itens itens">
+                            <img class="subtech-img" src="/assets/img/ruby_jekyll.svg" alt="Logo Jekyll" data-tooltip="Jekyll">
+                            <img class="subtech-img" src="/assets/img/ruby_middleman.svg" alt="Logo Middleman" data-tooltip="Middleman">
+                            <img class="subtech-img" src="/assets/img/ruby_rails.svg" alt="Logo Rails" data-tooltip="Rails">
+                            <input type="reset" value="">
+                        </div>    
+                    </div>
+
+                    <div class="sub-tech">
+                        <label for="g-php" class="tech">
+                            <img class="tech-img" src="/assets/img/php.svg" loading="lazy" alt="PHP Logo" data-tooltip="PHP">
+                        </label>
+                        <input type="radio" name="technology" id="g-php">
+                        <div class="php-itens itens">
+                            <img class="subtech-img" src="/assets/img/php_code_igniter.svg" alt="Logo Code Ingniter" data-tooltip="Code Ingniter">
+                            <img class="subtech-img" src="/assets/img/php_laravel.svg" alt="Logo Laravel" data-tooltip="Laravel">
+                            <img class="subtech-img" src="/assets/img/php_magento.svg" alt="Logo Magento" data-tooltip="Magento">
+                            <img class="subtech-img" src="/assets/img/php_opencart.svg" alt="Logo Open Cart" data-tooltip="Open Cart">
+                            <img class="subtech-img" src="/assets/img/php_wordpress.svg" alt="Logo Wordpress" data-tooltip="Wordpress">
+                            <input type="reset" value="">
+                        </div>
+                    </div>
+
+                    <div class="sub-tech">
+                        <label for="g-javascript" class="tech">
+                            <img class="tech-img" src="/assets/img/javascript.svg" loading="lazy" alt="JavaScript Logo" data-tooltip="Java Script">
+                            
+                        </label>
+                        <input type="radio" name="technology" id="g-javascript">
+                        <div class="javascript-itens itens">
+                            <img class="subtech-img" src="/assets/img/js_angular.svg" alt="Logo Angular" data-tooltip="Angular">
+                            <img class="subtech-img" src="/assets/img/js_jquery.svg" alt="Logo Jquery" data-tooltip="Jquery">
+                            <img class="subtech-img" src="/assets/img/js_react.svg" alt="Logo React" data-tooltip="React">
+                            <img class="subtech-img" src="/assets/img/js_stimulus.svg" alt="Logo Stimulus" data-tooltip="Stimulus">
+                            <img class="subtech-img" src="/assets/img/js_vue.svg" alt="Logo Vue" data-tooltip="Vue">
+                            <input type="reset" value="">
+                        </div>
+                    </div>
+
+                    <div class="sub-tech">
+                        <label for="g-aws" class="tech">
+                            <img class="tech-img" src="/assets/img/aws.svg" loading="lazy" alt="AWS Logo" data-tooltip="AWS">
+                        </label>
+                        <input type="radio" name="technology" id="g-aws">
+                        <div class="aws-itens itens">
+                            <img class="subtech-img" src="/assets/img/aws_api_gateway.svg" alt="Logo AWS Api Gateway" data-tooltip="Api Gateway">
+                            <img class="subtech-img" src="/assets/img/aws_aurora.svg" alt="Logo AWS Aurora" data-tooltip="Aurora">
+                            <img class="subtech-img" src="/assets/img/aws_cloud_front.svg" alt="Logo AWS Cloud Front" data-tooltip="Cloud Front">
+                            <img class="subtech-img" src="/assets/img/aws_cloud_watch.svg" alt="Logo AWS Cloud Watch" data-tooltip="Cloud Watch">
+                            <img class="subtech-img" src="/assets/img/aws_ec2.svg" alt="Logo AWS EC2" data-tooltip="EC2">
+                            <img class="subtech-img" src="/assets/img/aws_iam.svg" alt="Logo AWS IAM" data-tooltip="IAM">
+                            <img class="subtech-img" src="/assets/img/aws_lambda.svg" alt="Logo AWS Lambda" data-tooltip="Lambda">
+                            <img class="subtech-img" src="/assets/img/aws_load_balancer.svg" alt="Logo AWS Load Balancer" data-tooltip="Load Balancer">
+                            <img class="subtech-img" src="/assets/img/aws_nat_gateway.svg" alt="Logo AWS Nat Gateway" data-tooltip="Nat Gateway">
+                            <img class="subtech-img" src="/assets/img/aws_rds.svg" alt="Logo AWS RDS" data-tooltip="RDS">
+                            <img class="subtech-img" src="/assets/img/aws_s3.svg" alt="Logo AWS S3" data-tooltip="S3">
+                            <img class="subtech-img" src="/assets/img/aws_ses.svg" alt="Logo AWS SES" data-tooltip="SES">
+                            <img class="subtech-img" src="/assets/img/aws_sqs.svg" alt="Logo AWS SQS" data-tooltip="SQS">
+                            <img class="subtech-img" src="/assets/img/aws_vpc.svg" alt="Logo AWS VPC" data-tooltip="VPC">
+                            <img class="subtech-img" src="/assets/img/aws_waf.svg" alt="Logo AWS WAF" data-tooltip="WAF">
+                            <input type="reset" value="">
+                        </div>
+                    </div>
+                        
+                    <label for="g-ms-sql" class="tech">
+                        <img class="tech-img" src="/assets/img/ms_sql.svg" loading="lazy" alt="MS SQL Logo" data-tooltip="MS SQL">
+                    </label>
+                    <label for="g-swift" class="tech">
+                        <img class="tech-img" src="/assets/img/swift.svg" loading="lazy" alt="Swift Logo" data-tooltip="Swift">
+                    </label>
+                </div>
+                
+                <div class="line">
+                    <div class="sub-tech">
+                        <label for="g-java" class="tech">
+                            <img class="tech-img" src="/assets/img/java.svg" loading="lazy" alt="Java Logo" data-tooltip="Java">
+                        </label>
+                        <input type="radio" name="technology" id="g-java">
+                        <div class="java-itens itens">
+                            <img class="subtech-img" src="/assets/img/java_quarkus.svg" alt="Logo Quarkus" data-tooltip="Quarkus">
+                            <img class="subtech-img" src="/assets/img/java_spring.svg" alt="Logo Spring" data-tooltip="Spring">
+                            <input type="reset" value="">
+                        </div>
+                    </div>    
+
+                    <label for="g-sass" class="tech">
+                        <img class="tech-img" src="/assets/img/sass.svg" loading="lazy" alt="SASS Logo" data-tooltip="SASS">
+                    </label>
+
+                    <div class="sub-tech">
+                        <label for="g-apache" class="tech">
+                            <img class="tech-img" src="/assets/img/apache.svg" loading="lazy" alt="Apache Logo" data-tooltip="Apache">
+                        </label>
+                        <input type="radio" name="technology" id="g-apache">
+                        <div class="apache-itens itens">
+                            <img class="subtech-img" src="/assets/img/apache_aurora.svg" alt="Logo Aurora" data-tooltip="Aurora">
+                            <img class="subtech-img" src="/assets/img/apache_kafka.svg" alt="Logo Kafka" data-tooltip="Kafka">
+                            <input type="reset" value="">
+                        </div>
+                    </div>
+
+                    <label for="g-my-sql" class="tech">
+                        <img class="tech-img" src="/assets/img/my_sql.svg" loading="lazy" alt="MySQL Logo" data-tooltip="MySQL">
+                    </label>
+                    <label for="g-oracle" class="tech">
+                        <img class="tech-img" src="/assets/img/oracle.svg" loading="lazy" alt="Oracle Logo" data-tooltip="Oracle">
+                    </label>
+                </div>
+
+                <div class="line">
+                    <div class="sub-tech">
+                        <label for="g-node" class="tech">
+                            <img class="tech-img" src="/assets/img/node.svg" loading="lazy" alt="Node logo" data-tooltip="Node">
+                        </label>
+                        <input type="radio" name="technology" id="g-node">
+                        <div class="node-itens itens">
+                            <img class="subtech-img" src="/assets/img/node_nestjs.svg" alt="Logo NestJS" data-tooltip="NestJS">
+                            <img class="subtech-img" src="/assets/img/node_sails.svg" alt="Logo Sails" data-tooltip="Sails">
+                            <input type="reset" value="">
+                        </div>
+                    </div>
+
+                    <label for="g-flutter" class="tech">
+                        <img class="tech-img" src="/assets/img/flutter.svg" loading="lazy" alt="Flutter Logo" data-tooltip="Flutter">
+                    </label>
+                    <label for="g-postgre" class="tech">
+                        <img class="tech-img" src="/assets/img/postgre.svg" loading="lazy" alt="Postgre Logo" data-tooltip="Postgre">
+                    </label>
+                    <label for="g-azure" class="tech">
+                        <img class="tech-img" src="/assets/img/azure.svg" loading="lazy" alt="Azure Logo" data-tooltip="Azure">    
+                    </label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="staff" id="staff">
+        <!-- <a href="#staff" name="staff" class="checkpoint"></a> -->
+        <div class="title-staff">
+            <hr>
+            <p>STAFF</p>
+        </div>
+        <div class="staff-block">
+            <div class="block-top">
+                <div class="staff">
+                    <div class="img-container">
+                        <img class="img-staff" src="/assets/img/michel.webp" loading="lazy" alt="Image Michel">
+                        <a href="https://www.linkedin.com/in/michellcampos/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin" alt="Icon Linkedin"></a>
+                    </div>
+                    <p class="name-staff">Michel Campos</p>
+                    <p class="function-staff">Tech Manager</p>
+                    <img class="icon-brazil" src="/assets/img/brazil.webp" loading="lazy" alt="Icon Brazil">
+                </div>
+                <div class="staff">
+                    <div class="img-container">
+                        <img class="img-staff" src="/assets/img/carlos.webp" loading="lazy" alt="Image Carlos">
+                        <a href="https://www.linkedin.com/in/czillner/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin" alt="Icon Linkedin"></a>
+                    </div>
+                    <p class="name-staff">Carlos Zillner</p>
+                    <p class="function-staff">Full Cycle / Infrastructure</p>
+                    <img src="/assets/img/brazil.webp" loading="lazy" class="icon-brazil" alt="Icon Brazil">
+                </div>
+                <div class="staff">
+                    <div class="img-container">
+                        <img src="/assets/img/david.webp" loading="lazy" class="img-staff" alt="Image David">
+                        <a href="https://www.linkedin.com/in/creative-mobiledev/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin" alt="Icon Linkedin"></a>
+                    </div>
+                    <p class="name-staff">David Arellano</p>
+                    <p class="function-staff">Mobile Engineer</p>
+                    <img src="/assets/img/icon-mexico.webp" loading="lazy" class="icon-mexico" alt="Icon Mexico">
+                </div>
+            </div>
+            <div class="block-botton">
+                <div class="staff">
+                    <div class="img-container">
+                        <img src="/assets/img/renan.webp" loading="lazy" class="img-staff" alt="Image Renan">
+                        <a href="https://www.linkedin.com/in/renanscalet/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin" alt="Icon Linkedin"></a>
+                    </div>
+                    <p class="name-staff">Renan Scalet</p>
+                    <p class="function-staff">Full Stack Developer</p>
+                    <img src="/assets/img/brazil.webp" loading="lazy" class="icon-brazil" alt="Icon Brazil">
+                </div>
+                <div class="staff">
+                    <div class="img-container">
+                        <img src="/assets/img/muhammad.webp" loading="lazy" class="img-staff" alt="Image Muhammad">
+                        <a href="https://www.linkedin.com/in/sdet-muhammadusman/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin" alt="Icon Linkedin"></a>
+                    </div>
+                    <p class="name-staff">Muhammad Usman</p>
+                    <p class="function-staff">QA - Automation Engineer</p>
+                    <img src="/assets/img/icon-pakistan.webp" loading="lazy" class="icon-pakistan" alt="Icon Paquistain">
+                </div>
+                <div class="staff">
+                    <div class="img-container">
+                        <img src="/assets/img/ivo.webp" loading="lazy" class="img-staff" alt="Image Ivo">
+                        <a href="https://www.linkedin.com/in/ivo-bl/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin" alt="Icon Linkedin"></a>
+                    </div>
+                    <p class="name-staff">Ivo Barbosa</p>
+                    <p class="function-staff">Designer UX UI</p>
+                    <img src="/assets/img/brazil.webp" loading="lazy" class="icon-brazil" alt="Icon Brazil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="philosophy" id="philosophy">
+        <!-- <a href="#philosophy" name="philosophy" class="checkpoint"></a> -->
+        <div class="img-3d">
+            <img src="/assets/img/logo-function-3d.svg" loading="lazy" alt="Logo Function 3D">
+        </div>
+        <div class=".text-philo">
+            <h2 class="title-text">Our Philosophy</h2>
+            <div class="paragraph-text">
+                <p>We make sense of technology for the common good. We understand that everything is connected;
+                    there is something that unites everything and everyone. We apply a holistic view to systems
+                    and websites to create unique user experiences.</p>
+            </div>
+            <a href="#"><button>START YOUR PROJECT</button></a>
+        </div>
+    </section>
+
+    <div id="back-to-top">
+        <a href="#">
+            <p class="text-btt">Back to top</p>
+            <img src="/assets/img/top.svg" loading="lazy" class="icon-top" alt="Icon top">
+        </a>
+    </div>
+
+</main>
+
+<footer>
+    <hr>
+    <div class="footer-function">
+        <div class="itens-footer">
+            <a href="#"><img src="/assets/img/logo_footer.svg" loading="lazy" class="logo-footer" alt="Logo Function"></a>
+            <p>® Function 2024 - All Rights Reserved</p>
+        </div>
+        <div class="linkedin-footer">
+            <a href="https://www.linkedin.com/company/function-technologies/" target="_blank"><img src="/assets/img/icon_linkedin.svg" class="icon-linkedin-footer" alt="Icon Linkedin"></a>
+        </div> 
+    </div>
+</footer>
+
+<div class="progress"></div>

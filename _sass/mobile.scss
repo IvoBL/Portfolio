@@ -1,0 +1,376 @@
+@media screen and (max-width: 768px) {
+	.progress {
+		z-index: 10;
+	}
+	
+	header.page {
+		height: 100vh;
+		display: none;
+		background-color: #05050A;
+		.menu {
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: space-between;
+			height: 75vh;
+			img {
+				display: flex;
+				margin: 0;
+				padding: 0;
+			}
+			ul {
+				display: flex;
+				flex-direction: column;
+				margin-top: 100px;
+				li {
+					margin: 15px 0;
+					a {
+						font-size: 2.5vh;
+					}
+				}
+			}
+		}
+	}
+
+	.close-menu-label::after {
+		content: '☰';
+		position: fixed;
+		z-index: 15;
+		top: 1.5vh;
+		right: 3.2vh;
+		background-color: rgba(5, 5, 10, 0.8);
+		color: #FF5500;
+		font-size: 5vh;
+		line-height: 4.8vh;
+		width: 4.8vh;
+		height: 4.8vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0.5rem;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	input[type="checkbox"] {
+		display: none;
+	}
+	
+	.close-menu:checked~.page {
+		display: block;
+	}
+	
+	.close-menu:checked~.close-menu-label::after {
+	content: '×';
+		color: #FF5500;
+		cursor: pointer;
+	}
+	
+	.block-initial {
+		height: 167vh;
+		.banner {
+			display: block;
+			justify-content: center;
+			align-items: center;
+			.brand-logo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.company, .product {
+				width: 20vh;
+			}
+			.arrow-left, .arrow-right {
+				transform: rotate(90deg);
+				padding: 5px 5px;
+				width: 7vh;
+
+			}
+			.logo-function {
+				width: 30vh;
+			}
+		}
+		#function-button {
+			.text-function {
+				font-size: 2vh;
+			}
+		}
+	}
+
+	#services {
+		height: 145vh;
+		.itens-services {
+			display: flex;
+			justify-content: center;
+		}
+		.title-services {
+			padding: 0;
+			justify-content: center;
+			hr, p {
+				margin: 50px 0 0 0;
+			}
+		}
+		picture {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			img {
+				width: 40vh;
+			}
+		}
+	}
+
+	#technologies {
+		height: 95vh;
+		.title-tech {
+			padding: 0;
+			justify-content: center;
+			hr {
+				margin: 50px 0 0 0;
+				width: 13vh;
+			}
+			p {
+				margin: 50px 0 0 0;
+			}
+		}
+		.tech {
+			.tech-img {
+				width: 8vh;
+				height: 8vh;
+			}
+		}
+		.itens {
+			.subtech-img {
+				width: 8vh;
+				height: 8vh;
+			}
+		}
+		input#g-css3:checked ~ div.css3-itens,
+		input#g-cypress:checked ~ div.cypress-itens,
+		input#g-nginx:checked ~ div.nginx-itens,
+		input#g-dynamodb:checked ~ div.dybamodb-itens,
+		input#g-python:checked ~ div.python-itens,
+		input#g-html5:checked ~ div.html5-itens,
+		input#g-docker:checked ~ div.docker-itens,
+		input#g-mongodb:checked ~ div.mongodb-itens,
+		input#g-redisdb:checked ~ div.redisdb-itens,
+		input#g-ruby:checked ~ div.ruby-itens,
+		input#g-php:checked ~ div.php-itens,
+		input#g-javascript:checked ~ div.javascript-itens,
+		input#g-aws:checked ~ div.aws-itens,
+		input#g-ms-sql:checked ~ div.ms-sql-itens,
+		input#g-swift:checked ~ div.swift-itens,
+		input#g-java:checked ~ div.java-itens,
+		input#g-sass:checked ~ div.sass-itens,
+		input#g-apache:checked ~ div.apache-itens,
+		input#g-my-sql:checked ~ div.my-sql-itens,
+		input#g-oracle:checked ~ div.oracle-itens,
+		input#g-node:checked ~ div.node-itens,
+		input#g-flutter:checked ~ div.flutter-itens,
+		input#g-postgre:checked ~ div.postgre-itens,
+		input#g-azure:checked ~ div.azure-itens {
+
+			img:nth-child(1) {
+				transform: translate(-4vh, -7vh);
+			}
+			img:nth-child(2) {
+				transform: translate(-8vh, 0vh);
+			}
+			img:nth-child(3) {
+				transform: translate(-4vh, 7vh);
+			}
+			img:nth-child(4) {
+				transform: translate(4vh, 7vh);
+			}
+			img:nth-child(5) {
+				transform: translate(8vh, 0vh);
+			}
+			img:nth-child(6) {
+				transform: translate(4vh, -7vh);
+			}
+			img:nth-child(7) {
+				transform: translate(0vh, -14vh);
+			}
+			img:nth-child(8) {
+				transform: translate(-8vh, -14vh);
+			}
+			img:nth-child(9) {
+				transform: translate(-12vh, -7vh);
+			}
+			img:nth-child(10) {
+				transform: translate(-16vh, 0vh);
+			}
+			img:nth-child(11) {
+				transform: translate(-12vh, 7vh);
+			}
+			img:nth-child(12) {
+				transform: translate(-8vh, 14vh);
+			}
+			img:nth-child(13) {
+				transform: translate(0vh, 14vh);
+			}
+			img:nth-child(14) {
+				transform: translate(12vh, 7vh);
+			}
+			img:nth-child(15) {
+				transform: translate(12vh, -7vh);
+			}
+			input[type="reset"] {
+				display: block;
+			}
+		}
+	}
+
+	#staff {
+		height: 273vh;
+		.title-staff {
+			padding: 0;
+			justify-content: center;
+			hr, p {
+				margin: 50px 0 0 0;
+			}
+		}
+		.staff-block {
+			background-size: 50vh;
+			.block-top, .block-botton {
+				display: block;
+				margin: 0;
+				.staff {
+					margin: 35px;
+				}
+				.img-staff {
+					width: 21vh;
+				}
+			}
+		}
+	}
+
+	#philosophy {
+		height: 92vh;
+		display: block;
+		margin: 20vh 0 20vh 0;
+		justify-content: center;
+		background-size: 150vh;
+		.img-3d {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 40vh;
+			}
+		}
+		.title-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 50px 0 20px 0;
+		}
+		.paragraph-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin: 0;
+			width: 100%;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			button {
+				margin: 0;
+			}
+		}
+	}
+
+	#back-to-top {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	footer {
+		height: 48vh;
+		margin: 40px 0 40px 0;
+		padding: 0;
+		hr {
+			width: 80%;
+		}
+	}
+	.footer-function {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		.itens-footer {
+			display: block;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			align-items: center;
+			order: 2;
+			}
+			p {
+				padding: 0;
+				margin: 20px 0 0 0;
+				display: block;
+				font-size: 2vh;
+			}
+	}
+	.linkedin-footer {
+		order: 1;
+		.icon-linkedin-footer {
+			width: 8vh;
+			margin: 0;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 459px) {
+	.block-initial {
+		#function-button {
+			.text-function {
+				font-size: 2.2vh;
+			}
+		}
+	}
+
+	#technologies {
+		height: 67vh;
+		.tech {
+			.tech-img {
+				width: 8vh;
+				height: 8vh;
+			}
+		}
+		.itens {
+			.subtech-img {
+				width: 8vh;
+				height: 8vh;
+			}
+		}
+	}
+	#philosophy {
+		.img-3d {
+			img {
+				width: 30vh;
+			}
+		}
+		.title-text {
+			font-size: 5vh;
+		}
+	}
+	footer {
+		hr {
+			width: 80%;
+		}
+	}
+}
