@@ -38,7 +38,7 @@ header.page {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(5, 5, 10, 0.8);
+	background-color: #1f1f1f;
 	z-index: 13;
 	.menu {
 		display: flex;
@@ -51,8 +51,9 @@ header.page {
 		}
 		ul.social {
 			li {
+				width: 50px;
 				img {
-					width: 2rem;
+					width: 1.7rem;
 					margin-right: 0;
 				}
 			}
@@ -84,8 +85,8 @@ input[type="checkbox"] {
 }
 
 .block-initial { //section block initial
-	background-color: #05050A;
-	background-image: url("/assets/img/banner_block-1.png");
+	background-color: #f6f4ef;
+	// background-image: url("/assets/img/banner_block-1.png");
 	background-repeat: no-repeat;
 	background-size: 130vh;
 	background-position: center;
